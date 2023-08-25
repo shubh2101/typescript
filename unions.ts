@@ -30,3 +30,17 @@ function getDbId(id: number | string) {
     id + 2;
   }
 }
+
+// array
+
+const dataNum: number[] = [2, 3, 4];
+const dataStr: string[] = ["shu", "hot", "goat"];
+
+const dataCombine: (number | string | boolean)[] = [2, 3, "Shubham", true];
+
+// fixed union
+
+let seatAllotment : "aisle" | "middle" | "window" 
+
+seatAllotment = "aisle"
+// seatAllotment = "crew"  //error
