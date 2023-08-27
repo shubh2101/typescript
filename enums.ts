@@ -1,4 +1,12 @@
-enum seatChoice {
+// enum seatChoice {
+//   AISLE,
+//   MIDDLE,
+//   WINDOW,
+//   FOURTH,
+// }
+
+// for short js code
+const enum seatChoice {
   AISLE,
   MIDDLE,
   WINDOW,
@@ -26,3 +34,5 @@ enum seatChoice4 {
   WINDOW,
   FOURTH,
 }
+
+export {}
