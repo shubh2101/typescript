@@ -19,6 +19,15 @@ interface Admin extends User {
   role: "admin" | "ts" | "learner";
 }
 
+//Extending a type via intersections
+type Animal = {
+  name: string;
+};
+
+type Bear = Animal & {
+  honey: boolean;
+};
+
 const john: Admin = {
   dbId: 123,
   userId: 456,
@@ -32,3 +41,14 @@ const john: Admin = {
     return 100;
   },
 };
+//A type cannot be changed after being created
+type Window = {
+  title: string;
+};
+
+//   type Window = {
+//     ts: TypeScriptAPI;
+//   }
+
+// Error: Duplicate identifier 'Window'.
+export {};
