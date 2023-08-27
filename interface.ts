@@ -11,14 +11,20 @@ interface User {
 //reopening of interface
 
 interface User {
-    githubToken : string
+  githubToken: string;
 }
 
-const john: User = {
+// inheritance
+interface Admin extends User {
+  role: "admin" | "ts" | "learner";
+}
+
+const john: Admin = {
   dbId: 123,
   userId: 456,
   email: "shubh@gmail.com",
-  githubToken : "hsakhdka",
+  githubToken: "hsakhdka",
+  role: "admin",
   startTrail: () => {
     return "trial started";
   },
