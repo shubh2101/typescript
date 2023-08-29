@@ -1,4 +1,12 @@
-function createUser({ name: string, isPaid: boolean }) {
+// function createUser({ name: string, isPaid: boolean }) {
+//   console.log("user created");
+// }
+// wrong -- name and isPaid have any type
+type User2 = {
+  name: string;
+  isPaid: boolean;
+};
+function createUser({ name, isPaid }: User2) {
   console.log("user created");
 }
 createUser({ name: "shubham", isPaid: true });

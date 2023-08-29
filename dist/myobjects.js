@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-function createUser({ name: string, isPaid: boolean }) {
+function createUser({ name, isPaid }) {
     console.log("user created");
 }
 createUser({ name: "shubham", isPaid: true });
