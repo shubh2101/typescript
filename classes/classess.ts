@@ -32,5 +32,30 @@ class User4 {
 }
 
 const person1 = new User4("shubh@gmail", "shubh");
-person1.name = "raju"
+person1.name = "raju";
 // person1.city = "jaipur"
+
+//getters and setters
+
+class User5 {
+  _courseCount: number;
+  email: string;
+  name: string;
+  city: string = "";
+  constructor(email: string, name: string) {
+    this.email = email;
+    this.name = name;
+    this._courseCount = 1;
+  }
+
+  get getAppleEmail(): string {
+    return `apple${this.email}`;
+  }
+
+  set courseCount(courseNum: number) {
+    if (courseNum <= 1) {
+      throw new Error("couse count cant be less than 1");
+    }
+    this._courseCount = courseNum;
+  }
+}
