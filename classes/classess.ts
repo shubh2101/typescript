@@ -58,4 +58,8 @@ class User5 {
     }
     this._courseCount = courseNum;
   }
+
+  private deleteToken() {
+    console.log("token deleted");
+  }
 }
