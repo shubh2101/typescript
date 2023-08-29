@@ -14,4 +14,14 @@ class User3 {
         this.name = name;
     }
 }
-const person1 = new User3("shubh@gmail", "shubh");
+//private and public
+class User4 {
+    constructor(email, name) {
+        this.city = "";
+        this.email = email;
+        this.name = name;
+    }
+}
+const person1 = new User4("shubh@gmail", "shubh");
+person1.name = "raju";
+// person1.city = "jaipur"
