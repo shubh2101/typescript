@@ -28,4 +28,6 @@ class Youtube implements TakePhoto, Story {
   }
 }
 
+export {}
+
 
