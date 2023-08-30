@@ -46,3 +46,12 @@ class User5 {
         console.log("token deleted");
     }
 }
+class subClass extends User5 {
+    constructor() {
+        super(...arguments);
+        this.isFamily = true;
+    }
+    changeCoursecount() {
+        this._courseCount = 4;
+    }
+}

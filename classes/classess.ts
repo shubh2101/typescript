@@ -38,7 +38,7 @@ person1.name = "raju";
 //getters and setters
 
 class User5 {
-  _courseCount: number;
+  protected _courseCount: number;
   email: string;
   name: string;
   city: string = "";
@@ -61,5 +61,12 @@ class User5 {
 
   private deleteToken() {
     console.log("token deleted");
+  }
+}
+
+class subClass extends User5 {
+  isFamily: boolean = true;
+  changeCoursecount() {
+    this._courseCount = 4;
   }
 }
