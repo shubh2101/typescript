@@ -41,3 +41,20 @@ const getSeachArrow = <T>(products: T[]): T => {
   // do some db opertaions
   return products[3];
 };
+
+//Using Type parameters in generic constraints
+
+interface Database {
+  connection: string;
+  usename: string;
+  password: string;
+}
+
+function anotherFunc<T, U extends Database>(valOne: T, valTwo: U): object {
+  return {
+    valOne,
+    valTwo,
+  };
+}
+
+anotherFunc(3, { connection: "wifi", usename: "shubh", password: "ds21" });
