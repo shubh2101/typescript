@@ -1,6 +1,6 @@
 // const heroes = []
 
-// heroes.push ("spiderman")  // not assignable
+// heroes.push ("spiderman")  // string is not assignable to parameter of type "never"
 
 const heroes : string[] = []
 heroes.push ("spiderman")
