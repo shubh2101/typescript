@@ -58,3 +58,24 @@ function anotherFunc<T, U extends Database>(valOne: T, valTwo: U): object {
 }
 
 anotherFunc(3, { connection: "wifi", usename: "shubh", password: "ds21" });
+
+// using class types in generics
+
+interface Quiz {
+  name: string;
+  type: string;
+}
+
+interface Course {
+  name: string;
+  author: string;
+  subject: string;
+}
+
+class Sellable<T> {
+  public cart: T[] = [];
+
+  addToCart(product: T) {
+    this.cart.push(product);
+  }
+}
