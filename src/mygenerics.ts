@@ -29,3 +29,15 @@ interface Bottle {
 }
 
 identityFour<Bottle>({ brand: "local", model: 231 });
+
+// generics in array and arrow functions
+
+function getSeachProduct<T>(products: T[]): T {
+  // do some database operation
+  return products[0]; //return firstElement
+}
+
+const getSeachArrow = <T>(products: T[]): T => {
+  // do some db opertaions
+  return products[3];
+};
