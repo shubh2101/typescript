@@ -42,3 +42,15 @@ function isAdminAccount(account: User6 | Admin6) {
     return account.isAdmin;
   }
 }
+
+//instnaceof
+
+function logValue(x: Date | string) {
+  if (x instanceof Date) {
+    console.log(x.toUTCString());
+  } else {
+    console.log(x.toUpperCase());
+  }
+}
+
+
