@@ -25,3 +25,20 @@ function printAll(strs: string | string[] | null) {
   }
 }
 // downside: Not handling the empty string case correctly.
+
+// The "in" Operator narrowing
+interface User6 {
+  name: string;
+  email: string;
+}
+interface Admin6 {
+  name: string;
+  email: string;
+  isAdmin: boolean;
+}
+
+function isAdminAccount(account: User6 | Admin6) {
+  if ("isAdmin" in account) {
+    return account.isAdmin;
+  }
+}
